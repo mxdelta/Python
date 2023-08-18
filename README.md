@@ -6,3 +6,7 @@
 virtualenv --python=python3 impacket
 
 source impacket/bin/activate 
+
+# получение виртуальной оболочки внутри текущей сессии
+
+python3 -c 'import pty;pty.spawn("/bin/bash")'
