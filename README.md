@@ -3,9 +3,8 @@
 # Активировать виртуальную среду
 
 
-virtualenv --python=python3 impacket
+python3 -m venv venv
 
-source impacket/bin/activate 
 
 # получение виртуальной оболочки внутри текущей сессии
 
