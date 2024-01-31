@@ -5,6 +5,7 @@
 
 python3 -m venv venv
 
+source venv/bin/activate
 
 # получение виртуальной оболочки внутри текущей сессии
 
