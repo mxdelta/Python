@@ -9,6 +9,8 @@ source venv/bin/activate
 
 pip3 install -r requirements.txt
 
+pip3 install .
+
 # получение виртуальной оболочки внутри текущей сессии
 
 python3 -c 'import pty;pty.spawn("/bin/bash")'
