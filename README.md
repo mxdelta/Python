@@ -11,6 +11,9 @@ pip3 install -r requirements.txt
 
 pip3 install .
 
+deactivate    (выход и окружения)
+
+
 # получение виртуальной оболочки внутри текущей сессии
 
     python3 -c 'import pty;pty.spawn("/bin/bash")'
