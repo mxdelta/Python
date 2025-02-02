@@ -18,9 +18,13 @@ deactivate    (выход и окружения)
     python3 -i script.py
 
     import requests
+    import sys
+
+    # URL формы регистрации
     url = "http://10.10.11.135/login.php?login=true"
+    data = {"user":sys.argv[1],"password":"dvdsvdsvdsvsdvs"}
     # Отправка POST-запроса
-    response = requests.post(url, data={'user':'admin','password':'pass'})
+    response = requests.post(url, data=data)
     print(response.elapsed.microseconds)
 
 ![Uploading image.png…]()
