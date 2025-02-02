@@ -13,8 +13,20 @@ pip3 install .
 
 deactivate    (выход и окружения)
 
+# Интерактивный режим
 
-# получение виртуальной оболочки внутри текущей сессии
+    python3 -i script.py
+
+    import requests
+    url = "http://10.10.11.135/login.php?login=true"
+    # Отправка POST-запроса
+    response = requests.post(url, data={'user':'admin','password':'pass'})
+    print(response.elapsed.microseconds)
+
+![Uploading image.png…]()
+
+
+# получение виртуальной оболочки внутри текущей сессии линукс
 
     python3 -c 'import pty;pty.spawn("/bin/bash")'
 
