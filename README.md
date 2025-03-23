@@ -3,9 +3,9 @@
 # Активировать виртуальную среду
 
 
-python3 -m venv venv
+python3 -m venv myvenv
 
-source venv/bin/activate
+source myvenv/bin/activate
 
 pip3 install -r requirements.txt
 
